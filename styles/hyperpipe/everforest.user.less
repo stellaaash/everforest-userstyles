@@ -1,0 +1,62 @@
+/* ==UserStyle==
+@name Hyperpipe Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/hyperpipe
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/hyperpipe
+@version 2026.03.21
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/hyperpipe/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Ahyperpipe
+@description Comfortable & pleasant green theme for Hyperpipe
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("hyperpipe.surge.sh") {
+  body {
+    @media (prefers-color-scheme: light) {
+      #everforest(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #everforest(@darkFlavor);
+    }
+  }
+
+  body[data-theme^="light"] {
+    #everforest(@lightFlavor);
+  }
+
+  body[data-theme^="dark"],
+  body[data-theme^="black"],
+  body[data-theme^="dracula"],
+  body[data-theme^="nord"] {
+    #everforest(@darkFlavor);
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    --color-foreground: @accent !important;
+    --color-background: @base !important;
+    --color-background-soft: @surface0 !important;
+    --color-background-mute: @surface1 !important;
+    --color-border: @surface0 !important;
+    --color-border-hover: @overlay0 !important;
+    --color-shadow: @crust !important;
+    --color-blur: fade(@mantle, 45%) !important;
+    --color-gradient: linear-gradient(
+      45deg,
+      @accent,
+      fade(@accent, 45%)
+    );
+    --color-scrollbar: @accent !important;
+    --color-heading: @text !important;
+    --color-text: @text !important;
+  }
+}

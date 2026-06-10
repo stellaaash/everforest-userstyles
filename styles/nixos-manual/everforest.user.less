@@ -1,0 +1,75 @@
+/* ==UserStyle==
+@name NixOS Manual/Nixpkgs Manual Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/nixos-manual
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/nixos-manual
+@version 2025.09.06
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/nixos-manual/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Anixos-manual
+@description Comfortable & pleasant green theme for NixOS Manual and Nixpkgs Manual
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document url-prefix("https://nixos.org/manual/"),
+  url-prefix("https://nix-darwin.github.io/nix-darwin/manual/") {
+  @import url("https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/hljs-variables.important.css");
+
+  :root {
+    @media (prefers-color-scheme: light) {
+      #everforest(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #everforest(@darkFlavor);
+    }
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+    #lib.css-variables();
+
+    --background: @base;
+    --main-text-color: @text;
+    --link-color: @accent;
+    --heading-color: @accent;
+    --small-heading-color: fade(@accent, 85%);
+    --note-text-color: @blue;
+    --note-background: @base;
+    --warning-text-color: @red;
+    --warning-background: @base;
+    --codeblock-background: @surface0;
+    --codeblock-text-color: @text;
+
+    div.book .programlisting,
+    div.appendix .programlisting {
+      background-color: @surface0 !important;
+    }
+
+    hr,
+    div.toc {
+      border-top-color: transparent;
+      border-bottom-color: @overlay1 !important;
+    }
+
+    // Version selector
+    div[style^="background: #333333;color: #FFFFFF;"] {
+      background-color: @crust !important;
+
+      &,
+      dt {
+        color: @text !important;
+      }
+
+      a {
+        color: @accent !important;
+      }
+    }
+  }
+}

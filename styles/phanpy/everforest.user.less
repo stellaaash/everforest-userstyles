@@ -1,0 +1,88 @@
+/* ==UserStyle==
+@name Phanpy Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/phanpy
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/phanpy
+@version 2025.09.06
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/phanpy/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aphanpy
+@description Comfortable & pleasant green theme for Phanpy
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("phanpy.social") {
+  :root:not(:has(.is-light)) {
+    #everforest(@darkFlavor);
+  }
+  :root.is-light {
+    #everforest(@lightFlavor);
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    --text-color: @text;
+    --text-insignificant-color: @subtext0;
+    --link-color: @accent;
+    --link-text-color: @accent;
+    --link-faded-color: @accent;
+    --link-light-color: @accent;
+    --button-bg-blur-color: @accent;
+    --button-bg-color: @accent;
+    --button-text-color: @base;
+    --bg-faded-color: @base;
+    --bg-faded-blur-color: @mantle;
+    --bg-blur-color: @mantle;
+    --close-button-bg-color: @mantle;
+    --close-button-color: @subtext0;
+    --bg-color: @base;
+    --link-bg-hover-color: @mantle;
+    --divider-color: @surface0;
+    --outline-color: @surface0;
+    --outline-hover-color: @surface2;
+    --reblog-faded-color: fade(@mauve, 20%);
+    --reblog-color: @mauve;
+    --reply-to-faded-color: fade(@yellow, 20%);
+    --reply-to-text-color: @yellow;
+    --reply-to-color: @yellow;
+    --favourite-color: @red;
+    --green-color: @green;
+    --red-color: @red;
+    --comment-line-color: @surface1;
+    --media-bg-color: @base;
+    --media-fg-color: @text;
+    --media-outline-color: @text;
+
+    .szh-menu__item--disabled {
+      color: @subtext0;
+    }
+
+    .button.plain2 {
+      background-color: @mantle;
+    }
+
+    .replies-parent-link {
+      background-color: @surface0 !important;
+    }
+
+    .account-container {
+      --original-color: @blue;
+
+      .profile-field,
+      .stats,
+      .posting-stats-button {
+        background-color: @mantle;
+        -webkit-filter: none;
+        filter: none;
+      }
+    }
+  }
+}

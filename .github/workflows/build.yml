@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'catppuccin/userstyles'
+    if: github.repository == 'stellaaash/everforest-userstyles'
     runs-on: ubuntu-latest
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.USERSTYLES_TOKEN }}
+          token: ${{ github.token }}
 
       - name: Setup Deno
         uses: nekowinston/setup-deno@main

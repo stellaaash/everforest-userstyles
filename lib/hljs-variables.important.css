@@ -1,0 +1,142 @@
+code.hljs {
+  color: var(--efs-text) !important;
+  background: var(--efs-base) !important;
+}
+code .hljs-keyword {
+  color: var(--efs-mauve) !important;
+}
+code .hljs-built_in {
+  color: var(--efs-red) !important;
+}
+code .hljs-type {
+  color: var(--efs-yellow) !important;
+}
+code .hljs-literal {
+  color: var(--efs-peach) !important;
+}
+code .hljs-number {
+  color: var(--efs-peach) !important;
+}
+code .hljs-operator {
+  color: var(--efs-sky) !important;
+}
+code .hljs-punctuation {
+  color: var(--efs-subtext1) !important;
+}
+code .hljs-property {
+  color: var(--efs-teal) !important;
+}
+code .hljs-regexp {
+  color: var(--efs-pink) !important;
+}
+code .hljs-string {
+  color: var(--efs-green) !important;
+}
+code .hljs-char.escape_ {
+  color: var(--efs-green) !important;
+}
+code .hljs-subst {
+  color: var(--efs-subtext0) !important;
+}
+code .hljs-symbol {
+  color: var(--efs-flamingo) !important;
+}
+code .hljs-variable {
+  color: var(--efs-mauve) !important;
+}
+code .hljs-variable.language_ {
+  color: var(--efs-mauve) !important;
+}
+code .hljs-variable.constant_ {
+  color: var(--efs-peach) !important;
+}
+code .hljs-title {
+  color: var(--efs-blue) !important;
+}
+code .hljs-title.class_ {
+  color: var(--efs-yellow) !important;
+}
+code .hljs-title.function_ {
+  color: var(--efs-blue) !important;
+}
+code .hljs-params {
+  color: var(--efs-text) !important;
+}
+code .hljs-comment {
+  color: var(--efs-overlay2) !important;
+}
+code .hljs-doctag {
+  color: var(--efs-red) !important;
+}
+code .hljs-meta {
+  color: var(--efs-peach) !important;
+}
+code .hljs-section {
+  color: var(--efs-blue) !important;
+}
+code .hljs-tag {
+  color: var(--efs-teal) !important;
+}
+code .hljs-name {
+  color: var(--efs-mauve) !important;
+}
+code .hljs-attr {
+  color: var(--efs-blue) !important;
+}
+code .hljs-attribute {
+  color: var(--efs-green) !important;
+}
+code .hljs-bullet {
+  color: var(--efs-teal) !important;
+}
+code .hljs-code {
+  color: var(--efs-green) !important;
+}
+code .hljs-emphasis {
+  color: var(--efs-red) !important;
+  font-style: italic !important;
+}
+code .hljs-strong {
+  color: var(--efs-red) !important;
+  font-weight: bold !important;
+}
+code .hljs-formula {
+  color: var(--efs-teal) !important;
+}
+code .hljs-link {
+  color: var(--efs-sapphire) !important;
+  font-style: italic !important;
+}
+code .hljs-quote {
+  color: var(--efs-green) !important;
+  font-style: italic !important;
+}
+code .hljs-selector-tag {
+  color: var(--efs-yellow) !important;
+}
+code .hljs-selector-id {
+  color: var(--efs-blue) !important;
+}
+code .hljs-selector-class {
+  color: var(--efs-teal) !important;
+}
+code .hljs-selector-attr {
+  color: var(--efs-mauve) !important;
+}
+code .hljs-selector-pseudo {
+  color: var(--efs-teal) !important;
+}
+code .hljs-template-tag {
+  color: var(--efs-flamingo) !important;
+}
+code .hljs-template-variable {
+  color: var(--efs-flamingo) !important;
+}
+code .hljs-addition {
+  color: var(--efs-green) !important;
+  background: rgb(from var(--efs-green) r g b/15%) !important;
+}
+code .hljs-deletion {
+  color: var(--efs-red) !important;
+  background: rgb(from var(--efs-red) r g b/15%) !important;
+}

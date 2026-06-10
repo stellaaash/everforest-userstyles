@@ -1,30 +1,53 @@
 <h3 align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-  Catppuccin Userstyles
-  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+  🌲 Everforest Userstyles
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/userstyles/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/userstyles?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-  <a href="https://github.com/catppuccin/userstyles/blob/main/styles"><img src="https://img.shields.io/github/directory-file-count/catppuccin/userstyles/styles?label=Userstyles&colorA=363a4f&colorB=cba6f7&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/userstyles/blob/main/.github/CODEOWNERS"><img src="https://img.shields.io/badge/dynamic/yaml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fcatppuccin%2Fuserstyles%2Fmain%2Fscripts%2Fuserstyles.yml&query=%24.collaborators.length&label=Maintainers&colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
-  <a href="https://http.cat/404"><img src="https://img.shields.io/badge/Discussions-disabled-cad3f5?&colorA=363a4f&colorB=f0c6c6&style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+Q2F0cHB1Y2NpbjwvdGl0bGU+PHBhdGggZD0iTTEyIDBBMTIgMTIgMCAwIDAgMCAxMmExMiAxMiAwIDAgMCA2LjMwMyAxMC40NzVjLjA1NC0uMzA5LjU1Ni0zLjE3Ny44MDItMy42NDEgMCAwLTUuOTQ0LTIuNzM1LTEuOTcyLTkuODYzIDAgMC0uOTUtMy43MjUtLjE3NC00LjQwMy43NzYtLjY3NyAzLjM4My45MjcgMy45MzYgMS42MTIgMCAwIDIuMDg0LS45ODMgNS4zNjUtLjIzIDAgMCAyLjI5Mi0yLjI4MSAzLjIxMy0xLjg4NC45Mi4zOTguNzIyIDMuNzAyLjYxOSAzLjk2IDAgMCA1LjYzIDUuMjMyLTEuMjQ2IDEwLjQzNyAwIDAgLjQ3NSAzLjA1OC40MzEgNC4xMjNBMTIgMTIgMCAwIDAgMjQgMTIgMTIgMTIgMCAwIDAgMTIgMFptNC4wMyA5LjFjLS44ODQgMC0xLjYuNjEtMS42IDEuMzYgMCAuMDMzIDAgLjA2NS4wMDQuMDk3YS4xNDguMTQ4IDAgMCAwIC4yNjQuMDgyYy4zMDUtLjM4Ljc5Ny0uNzEzIDEuMzUzLS43MTMuNTIgMCAuOTg1LjI5NyAxLjI5My42NDQuMDQ1LjA1MS4xMTcuMDcuMTgxLjA0NWEuMTY0LjE2NCAwIDAgMCAuMTA2LS4xNTRjMC0uNzUtLjcxOC0xLjM2MS0xLjYwMi0xLjM2MXptLTUuMjA2LjEyM2MtMS4wMSAwLTEuODMuNzExLTEuODMgMS41ODYgMCAuMDYuMDA0LjExOC4wMTIuMTc3YS4xNDcuMTQ3IDAgMCAwIC4yNjQuMDczYy4zNDYtLjQ0Ni45MjQtLjgxNSAxLjU3OC0uODE1LjU5IDAgMS4xMi4zMDcgMS40Ny42OTRhLjE5NC4xOTQgMCAwIDAgLjMzNi0uMTNjMC0uODc0LS44Mi0xLjU4NS0xLjgzLTEuNTg1em0yLjkzIDIuNTAyYy0uMDE0IDAtLjAyNS4wMS0uMDI1LjAyM3YuMDAybC4wMDEuMDAyLjAwMi0uMDAyYy4wMDUtLjAwNi4wMTUtLjAxLjAyNC0uMDEuMDA4IDAgLjAxNC4wMDUuMDIuMDFoLjAwM3YtLjAwMmMwLS4wMTItLjAxMS0uMDIzLS4wMjUtLjAyM3ptMS4yMjUuMjQ2LTEuODAxLjE2YS4xMDcuMTA3IDAgMCAwLS4wNTUuMTkzbDEuMDQxLjc2OGEuMTguMTggMCAwIDAgLjI0NC0uMDNsLjcwNS0uODMyYS4xNTguMTU4IDAgMCAwLS4xMzUtLjI2em0uOTIgMS4zMzRjLS41MDQuODY2LTEuNDU4LjI3LTEuNDU4LjI3LS42NzQgMS4wNzktMS45MTYuMzEyLTEuOTE2LjMxMi43NjggMS40NjUgMi4wMTIuMzYzIDIuMDEyLjM2MyAxLjMyNS4zNzcgMS4zNjEtLjk0NSAxLjM2MS0uOTQ1em0tMy4zODcgNS40NDFjLS40NTggMS4zODEuMzE4IDIuMjU0LjMxOCAyLjI1NC43MTYuMDAyIDEuMzYxLS44ODUgMS4zNjEtLjg4NS4xLjExMS45MDguNDA5IDEuMDcuNDE2LjE2My4wMDguMjQ2LTEuNi0uMDgxLTEuNzA3LS4zMjctLjEwNi0xLjA1Ny42NDctMS4wNTcuNjQ3LS4zOC0uMzkzLTEuNjExLS43MjUtMS42MTEtLjcyNXoiIGZpbGw9IiNjYWQzZjUiLz48L3N2Zz4="/></a>
+  Comfortable & pleasant <a href="https://github.com/sainnhe/everforest">everforest</a> themes for your favorite websites — a full port of <a href="https://github.com/catppuccin/userstyles">catppuccin/userstyles</a>.
 </p>
 
-<p align="center">
-A curated collection of soothing pastel themes for your favorite websites and web applications.
-</p>
+---
 
-<p align="center">
-<img src="docs/src/assets/preview.webp"/>
-</p>
+133 userstyles, each available as **Everforest Dark** and **Everforest Light** (medium contrast) with a configurable accent color, installable per-site with [Stylus](https://github.com/openstyles/stylus).
 
-<p align="center">
-Visit <a href="https://userstyles.catppuccin.com">userstyles.catppuccin.com</a> to get started.
-</p>
+## Usage
 
-&nbsp;
+1. Install [Stylus](https://github.com/openstyles/stylus) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) or [Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
+2. Browse the [`styles/`](styles/) directory and open the `everforest.user.less` file of any style **as raw** — Stylus will offer to install it.
+3. Configure flavor (dark/light) and accent in Stylus' style configuration panel.
 
-<p align="center"><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" /></p>
-<p align="center">Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+To install **everything at once**, download `import.json` from the latest [`all-userstyles-export` release](https://github.com/stellaaash/everforest-userstyles/releases/tag/all-userstyles-export) and import it in Stylus' settings.
+
+## How this repo works
+
+This is a **generated port**: the styles are produced from a pinned commit of [catppuccin/userstyles](https://github.com/catppuccin/userstyles) (see [`UPSTREAM_COMMIT`](UPSTREAM_COMMIT)) by the codemod in [`scripts/port/`](scripts/port/), which swaps the palette, branding, and flavor model. **Never edit files under `styles/` by hand** — add a rule to the codemod and re-run:
+
+```sh
+deno task port          # regenerate styles/ from the pinned upstream commit
+deno task generate:lib  # regenerate lib/lib.less from scripts/port/palette.ts
+deno task vendor:css    # re-vendor the syntax-highlighting CSS in lib/
+deno task lint          # upstream's lint suite, ported
+```
+
+To sync with upstream: update the `upstream` branch, write the new commit hash to `UPSTREAM_COMMIT`, re-run `deno task port`, and review the diff.
+
+## Palette mapping
+
+The upstream code uses catppuccin's 26 semantic color slots; this port keeps the slot names and maps them to [everforest](https://everforest.vercel.app/palette) (medium contrast). Where everforest has no equivalent (catppuccin has 14 accents, everforest 7), shades are derived from exact everforest anchors — see [`scripts/port/palette.ts`](scripts/port/palette.ts) for every value and derivation formula.
+
+| Slot                                                                                             | Everforest source                              |
+| ------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| `text`                                                                                           | fg                                             |
+| `overlay0`–`overlay2`                                                                            | grey0–grey2                                    |
+| `surface0`–`surface2`, `base`, `mantle`, `crust`                                                 | background levels (bg_dim–bg5)                 |
+| `red`, `peach`, `yellow`, `green`, `teal`, `blue`, `mauve`                                       | red, orange, yellow, green, aqua, blue, purple |
+| `maroon`, `sky`, `sapphire`, `lavender`, `pink`, `flamingo`, `rosewater`, `subtext0`, `subtext1` | derived shades                                 |
+
+The catppuccin flavor model (latte/frappé/macchiato/mocha) maps to `light`/`dark`. Not ported: **codeberg** (it only imports the prebuilt catppuccin/gitea theme, which has no everforest build).
+
+## Credits & license
+
+- [**catppuccin/userstyles**](https://github.com/catppuccin/userstyles) — all of the actual site-theming CSS comes from the Catppuccin community's work. 💜
+- [**sainnhe/everforest**](https://github.com/sainnhe/everforest) — the everforest palette.
+
+[MIT](LICENSE), retaining Catppuccin's copyright for the upstream work.

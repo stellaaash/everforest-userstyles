@@ -4,17 +4,13 @@ import { REPO_ROOT } from "@/constants.ts";
 import * as path from "@std/path";
 import * as yaml from "@std/yaml";
 
-import { type ColorName, flavors } from "@catppuccin/palette";
+import { palette } from "@/port/palette.ts";
 import { writeWithPreamble } from "@/generate/utils.ts";
 
 /**
- * Macchiato color definitions as hex values.
+ * Everforest dark color definitions as hex values, for label colors.
  */
-const macchiatoHex = flavors.macchiato.colorEntries
-  .reduce((acc, [identifier, { hex }]) => {
-    acc[identifier] = hex;
-    return acc;
-  }, {} as Record<ColorName, string>);
+const labelHex = palette.dark;
 
 const toIssueLabel = (key: string) => `lbl:${key}`;
 
@@ -83,14 +79,14 @@ export async function syncIssueLabels(userstyles: UserstylesSchema.Userstyles) {
         {
           name: key,
           description: style.name,
-          color: style.color ? macchiatoHex[style.color] : macchiatoHex.blue,
+          color: style.color ? labelHex[style.color] : labelHex.blue,
         },
         ...Object.entries(style.supports ?? {}).map((
           [supportedKey, { name }],
         ) => ({
           name: supportedKey,
           description: name,
-          color: style.color ? macchiatoHex[style.color] : macchiatoHex.blue,
+          color: style.color ? labelHex[style.color] : labelHex.blue,
         })),
       ]),
     ),

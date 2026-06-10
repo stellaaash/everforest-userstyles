@@ -35,8 +35,6 @@ cinny:
   - '/lbl:cinny(,.*)?$/gm'
 claude:
   - '/lbl:claude(,.*)?$/gm'
-codeberg:
-  - '/lbl:codeberg(,.*)?$/gm'
 cobalt:
   - '/lbl:cobalt(,.*)?$/gm'
 crates.io:

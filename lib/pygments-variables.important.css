@@ -1,0 +1,193 @@
+td.linenos .normal, span.linenos, td.linenos .special, span.linenos.special {
+  color: var(--efs-text) !important;
+  background-color: var(--efs-mantle) !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+pre .hll, code .hll {
+  background-color: var(--efs-surface0) !important;
+}
+pre, code {
+  background: var(--efs-mantle) !important;
+  color: var(--efs-text) !important;
+}
+pre .c, code .c {
+  color: var(--efs-overlay2) !important;
+}
+pre .err, code .err, pre .g, code .g {
+  color: var(--efs-text) !important;
+}
+pre .k, code .k {
+  color: var(--efs-mauve) !important;
+}
+pre .l, code .l, pre .n, code .n {
+  color: var(--efs-text) !important;
+}
+pre .o, code .o {
+  color: var(--efs-sky) !important;
+}
+pre .x, code .x {
+  color: var(--efs-text) !important;
+}
+pre .p, code .p, pre .ch, code .ch, pre .cm, code .cm {
+  color: var(--efs-overlay2) !important;
+}
+pre .cp, code .cp {
+  color: var(--efs-pink) !important;
+}
+pre .cpf, code .cpf, pre .c1, code .c1, pre .cs, code .cs {
+  color: var(--efs-overlay2) !important;
+}
+pre .gd, code .gd {
+  color: var(--efs-red) !important;
+}
+pre .ge, code .ge {
+  color: var(--efs-text) !important;
+  text-decoration: underline !important;
+}
+pre .ges, code .ges, pre .gr, code .gr {
+  color: var(--efs-text) !important;
+}
+pre .gh, code .gh, pre .gi, code .gi {
+  color: var(--efs-text) !important;
+  font-weight: 700 !important;
+}
+pre .go, code .go {
+  color: var(--efs-overlay0) !important;
+}
+pre .gp, code .gp, pre .gs, code .gs {
+  color: var(--efs-text) !important;
+}
+pre .gu, code .gu {
+  color: var(--efs-text) !important;
+  font-weight: 700 !important;
+}
+pre .gt, code .gt {
+  color: var(--efs-text) !important;
+}
+pre .kc, code .kc {
+  color: var(--efs-mauve) !important;
+}
+pre .kd, code .kd {
+  color: var(--efs-mauve) !important;
+  font-style: italic !important;
+}
+pre .kn, code .kn {
+  color: var(--efs-mauve) !important;
+}
+pre .kp, code .kp {
+  color: var(--efs-pink) !important;
+}
+pre .kr, code .kr {
+  color: var(--efs-mauve) !important;
+}
+pre .kt, code .kt {
+  color: var(--efs-yellow) !important;
+}
+pre .ld, code .ld {
+  color: var(--efs-text) !important;
+}
+pre .m, code .m {
+  color: var(--efs-peach) !important;
+}
+pre .s, code .s, pre .na, code .na {
+  color: var(--efs-green) !important;
+}
+pre .nb, code .nb {
+  color: var(--efs-red) !important;
+  font-style: italic !important;
+}
+pre .nc, code .nc {
+  color: var(--efs-yellow) !important;
+}
+pre .no, code .no, pre .nd, code .nd, pre .ni, code .ni {
+  color: var(--efs-text) !important;
+}
+pre .ne, code .ne {
+  color: var(--efs-yellow) !important;
+}
+pre .nf, code .nf {
+  color: var(--efs-blue) !important;
+}
+pre .nl, code .nl {
+  color: var(--efs-teal) !important;
+  font-style: italic !important;
+}
+pre .nn, code .nn, pre .nx, code .nx, pre .py, code .py {
+  color: var(--efs-text) !important;
+}
+pre .nt, code .nt {
+  color: var(--efs-blue) !important;
+}
+pre .nv, code .nv {
+  color: var(--efs-text) !important;
+  font-style: italic !important;
+}
+pre .ow, code .ow {
+  color: var(--efs-mauve) !important;
+}
+pre .pm, code .pm {
+  color: var(--efs-overlay2) !important;
+}
+pre .w, code .w {
+  color: var(--efs-text) !important;
+}
+pre .mb,
+code .mb,
+pre .mf,
+code .mf,
+pre .mh,
+code .mh,
+pre .mi,
+code .mi,
+pre .mo,
+code .mo {
+  color: var(--efs-peach) !important;
+}
+pre .sa,
+code .sa,
+pre .sb,
+code .sb,
+pre .sc,
+code .sc,
+pre .dl,
+code .dl,
+pre .sd,
+code .sd,
+pre .s2,
+code .s2 {
+  color: var(--efs-green) !important;
+}
+pre .se, code .se {
+  color: var(--efs-pink) !important;
+}
+pre .sh, code .sh, pre .si, code .si, pre .sx, code .sx {
+  color: var(--efs-green) !important;
+}
+pre .sr, code .sr {
+  color: var(--efs-pink) !important;
+}
+pre .s1, code .s1 {
+  color: var(--efs-green) !important;
+}
+pre .ss, code .ss {
+  color: var(--efs-red) !important;
+}
+pre .bp, code .bp {
+  color: var(--efs-red) !important;
+  font-style: italic !important;
+}
+pre .fm, code .fm {
+  color: var(--efs-blue) !important;
+}
+pre .vc, code .vc {
+  color: var(--efs-yellow) !important;
+  font-style: italic !important;
+}
+pre .vg, code .vg, pre .vi, code .vi, pre .vm, code .vm {
+  color: var(--efs-text) !important;
+  font-style: italic !important;
+}
+pre .il, code .il {
+  color: var(--efs-peach) !important;
+}

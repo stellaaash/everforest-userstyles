@@ -1,11 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Request a Userstyle
-    url: https://github.com/catppuccin/catppuccin/discussions/new?category=port-requests
-    about: Request for a website to be themed.
+    url: https://github.com/stellaaash/everforest-userstyles/issues/new
+    about: Request for a website to be themed. Note that new styles land upstream in catppuccin/userstyles first and are then ported here.
   - name: Submit a New Userstyle
-    url: https://github.com/catppuccin/userstyles/compare
+    url: https://github.com/stellaaash/everforest-userstyles/compare
     about: Already made a theme? Submit a pull request to add it to the collection.
-  - name: Community Discord
-    url: https://discord.com/servers/catppuccin-907385605422448742
-    about: Ask questions and chat to other community members!

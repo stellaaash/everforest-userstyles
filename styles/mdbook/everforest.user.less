@@ -1,0 +1,108 @@
+/* ==UserStyle==
+@name mdBook Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/mdbook
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/mdbook
+@version 2026.04.09
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/mdbook/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Amdbook
+@description Comfortable & pleasant green theme for mdBook
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("rust-lang.github.io"),
+  domain("doc.rust-lang.org"),
+  domain("rust-book.cs.brown.edu"),
+  domain("rustc-dev-guide.rust-lang.org"),
+  domain("forge.rust-lang.org"),
+  domain("lang-team.rust-lang.org"),
+  domain("doc.redox-os.org"),
+  url-prefix("https://lukaswirth.dev/tlborm/") {
+  @import url("https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/hljs-variables.css");
+
+  :root {
+    @media (prefers-color-scheme: light) {
+      #everforest(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #everforest(@darkFlavor);
+    }
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+    #lib.css-variables();
+
+    --bg: @base;
+    --fg: @text;
+    --sidebar-bg: @mantle;
+    --sidebar-fg: @text;
+    --sidebar-non-existant: @overlay0;
+    --sidebar-active: @blue;
+    --sidebar-spacer: @overlay0;
+    --scrollbar: @overlay0;
+    --icons: @overlay0;
+    --icons-hover: @overlay2;
+    --links: @blue;
+    --inline-code-color: @text;
+    --theme-popup-bg: @mantle;
+    --theme-popup-border: @overlay0;
+    --theme-hover: @overlay0;
+    --quote-bg: @mantle;
+    --quote-border: @crust;
+    --table-border-color: @surface0;
+    --table-header-bg: mix(@accent, @base, 30%);
+    --table-alternate-bg: @mantle;
+    --searchbar-border-color: @surface0;
+    --searchbar-bg: @mantle;
+    --searchbar-fg: @text;
+    --searchbar-shadow-color: @crust;
+    --searchresults-header-fg: @text;
+    --searchresults-border-color: @surface2;
+    --searchresults-li-bg: @base;
+    --sidebar-header-border-color: @lavender;
+    --search-mark-bg: @peach;
+    --warning-border: @peach;
+    --copy-button-filter: @subtext0-filter;
+    --copy-button-filter-hover: @blue-filter;
+    --blockquote-note-color: @blue;
+    --blockquote-tip-color: @green;
+    --blockquote-important-color: @mauve;
+    --blockquote-warning-color: @yellow;
+    --blockquote-caution-color: @red;
+    /* https://github.com/cognitive-engineering-lab/mdbook-quiz */
+    --mdbook-incorrect: @red;
+    --mdbook-correct: @green;
+
+    code.hljs {
+      color: @text;
+      background: @mantle;
+    }
+    blockquote blockquote {
+      border-top-color: @surface2;
+      border-bottom-color: @surface2;
+    }
+    hr {
+      color: @surface2;
+    }
+    del {
+      color: @overlay2;
+    }
+    .ace_gutter {
+      color: @overlay1;
+      background: @mantle;
+    }
+    .ace_gutter-active-line.ace_gutter-cell {
+      color: @pink;
+      background: @mantle;
+    }
+  }
+}

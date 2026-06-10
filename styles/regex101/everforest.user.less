@@ -1,0 +1,164 @@
+/* ==UserStyle==
+@name regex101 Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/regex101
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/regex101
+@version 2026.01.10
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/regex101/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Aregex101
+@description Comfortable & pleasant green theme for regex101
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("regex101.com") {
+  @import url("https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/hljs-variables.important.css");
+
+  :root {
+    &[data-theme="dark"] {
+      #everforest(@darkFlavor);
+    }
+    &[data-theme="light"] {
+      #everforest(@lightFlavor);
+    }
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+    #lib.css-variables();
+
+    --primary-color: @crust;
+    --primary-contrast-color: @accent;
+
+    --app-color: @text;
+    --app-color-metadata: @subtext0;
+    --app-contrast-color: @subtext1;
+
+    --link-color: @accent;
+
+    --highlight-bg: @green;
+    --spinner-bg: @overlay0;
+    --bg-0: @mantle;
+    --bg-1: @base;
+    --content-bg: @surface0;
+
+    --content-border-color: @surface1;
+    --sub-content-bg: @surface1;
+
+    --info-color: @subtext0;
+    --success-color: @green;
+    --warning-color: @yellow;
+    --danger-color: @red;
+
+    --misc-button-icon-color: @subtext1;
+    --misc-button-bg: @surface0;
+    --misc-button-hover-bg: @surface1;
+    --misc-button-active-bg: @surface2;
+    --misc-button-active-color: @base;
+    --misc-button-highlight-bg: fade(@green, 40%);
+
+    --editor-active-bg: @overlay2;
+    --library-active-bg: @yellow;
+    --account-active-bg: @green;
+    --quiz-active-bg: @teal;
+    --settings-active-bg: @pink;
+
+    #hsl-variables(--button-bg, @surface0);
+    #hsl-variables(--button-ok-bg, @mantle);
+    #hsl-variables(--button-danger-bg, fade(@red, 30%));
+
+    --button-hover-l: lightness(@surface1);
+    --backdrop-bg: fade(@overlay0, 30%);
+
+    --input-bg: @base;
+    --input-disabled-bg: @mantle;
+    --input-border-color: @surface0;
+    --input-focused-border-color: @surface0;
+
+    --label-color: @subtext1;
+    --tooltip-color: @crust;
+    --tooltip-bg: @subtext0;
+    --version-btn-bg: fade(@green, 30%);
+    --match-indicator-no-match: fade(@blue, 30%);
+    --match-indicator-match-bg: fade(@green, 30%);
+    --match-indicator-error-bg: fade(@red, 30%);
+
+    --debugger-backtrack-bg: fade(@red, 30%);
+    --debugger-regex-bg: fade(@green, 30%);
+    --debugger-slider-bg: @surface2;
+
+    --header-discord-color: @lavender;
+    --header-twitter-color: @text;
+    --header-donate-color: @yellow;
+    --header-contact-color: @green;
+    --header-feedback-color: @maroon;
+    --header-wiki-color: @teal;
+    --header-whatsnew-color: @yellow;
+    --header-sponsor-color: @pink;
+    --header-paypal-color: @blue;
+    --header-info-color: @sky;
+    --header-social-color: @green;
+    --header-stripe-color: @blue;
+
+    --starred-library-entry-bg: fade(@yellow, 10%);
+    --cm-whitespace-color: @overlay1;
+    --cm-selected-bg: fade(@accent, 30%);
+    --cm-inactive-selected-bg: fade(@accent, 30%);
+
+    @match-group-colors: @blue, @green, @yellow, @mauve, @pink, @red, @green;
+    each(
+      @match-group-colors,
+      {
+        @i: @index - 1;
+        --match-group-@{i}: @value;
+        --match-group-@{i}-alt: darken(@value, 10%);
+      }
+    );
+
+    --match-highlight-color: fade(@yellow, 90%);
+
+    --explanation-keyword-color: @green;
+    --explanation-token-bg: fade(@yellow, 80%);
+    --explanation-token-color: @base;
+    --explanation-plain-text-bg: fade(@surface2, 80%);
+    --explanation-flag-color: @mauve;
+
+    --token-quote-color: @mauve;
+    --token-quote-bg: none;
+    --token-escaped-string-color: var(--app-color);
+    --token-escaped-string-bg: fade(@overlay1, 30%);
+    #accent-token(meta, @blue);
+    #accent-token(char-class, @rosewater);
+    #accent-token(char-class-meta, @flamingo);
+    #accent-token(subpattern-reference, @mauve);
+    #accent-token(group-0, @green);
+    #accent-token(group-1, @yellow);
+    #accent-token(group-2, @peach);
+    #accent-token(group-3, @maroon);
+    #accent-token(comment, transparent);
+    #accent-token(error, @red);
+
+    #accent-token(@id, @color) {
+      --token-@{id}-bg: @color;
+      --token-@{id}-color: @base;
+    }
+
+    #hsl-variables(@variable, @color) {
+      @{variable}-h: hue(@color);
+      @{variable}-s: saturation(@color);
+      @{variable}-l: lightness(@color);
+    }
+
+    // Canvas is pulling theme colours from CSS variables, just needs fading for contrast
+    canvas {
+      filter: opacity(0.3);
+    }
+  }
+}

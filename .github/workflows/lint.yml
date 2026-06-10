@@ -10,7 +10,7 @@ on:
 
 jobs:
   lint:
-    if: github.repository == 'catppuccin/userstyles'
+    if: github.repository == 'stellaaash/everforest-userstyles'
     runs-on: ubuntu-latest
 
     steps:

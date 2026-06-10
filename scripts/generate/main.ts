@@ -4,11 +4,7 @@ import { REPO_ROOT } from "@/constants.ts";
 import { syncIssueLabels } from "@/generate/labels.ts";
 import { generateStyleReadmes } from "@/generate/readme-styles.ts";
 import { writeWithPreamble } from "@/generate/utils.ts";
-import {
-  getAuthenticatedOctokit,
-  getUserstylesData,
-  getUserstylesTeamMembers,
-} from "@/utils.ts";
+import { getUserstylesData } from "@/utils.ts";
 
 if (!Deno.env.get("CI")) {
   throw new Error(
@@ -47,23 +43,7 @@ function maintainersCodeOwners() {
     })
     .join("\n");
 }
-async function userstylesStaffCodeOwners() {
-  const paths = ["/.github/", "/scripts/", "/template/", "/lib/"];
-
-  const octokit = getAuthenticatedOctokit();
-  // Set codeowners to include each member of the userstyles-staff team specifically instead of the team as a whole,
-  // to require individual reviews from each member instead of just one on behalf of the team.
-  const staffMembers = await getUserstylesTeamMembers(
-    octokit,
-    "userstyles-staff",
-  );
-  return paths.map((path) =>
-    `${path} ${staffMembers.map((member) => "@" + member).join(" ")}`
-  ).join(
-    "\n",
-  );
-}
 await writeWithPreamble(
   path.join(REPO_ROOT, ".github/CODEOWNERS"),
-  `${maintainersCodeOwners()}\n\n${await userstylesStaffCodeOwners()}`,
+  maintainersCodeOwners(),
 );

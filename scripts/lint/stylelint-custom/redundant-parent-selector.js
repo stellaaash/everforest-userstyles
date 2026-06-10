@@ -12,6 +12,8 @@ const ruleName = "catppuccin/no-redundant-parent-selector";
 
 const meta = {
   fixable: true,
+  url:
+    "https://github.com/stellaaash/everforest-userstyles/tree/main/scripts/lint/stylelint-custom",
 };
 
 const messages = ruleMessages(ruleName, {

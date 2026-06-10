@@ -1,0 +1,124 @@
+/* https://prismjs.com/tokens.html */
+
+.token.keyword {
+  color: var(--efs-mauve) !important;
+}
+
+.token.builtin {
+  color: var(--efs-red) !important;
+}
+
+.token.class-name {
+  color: var(--efs-yellow) !important;
+}
+
+.token.function {
+  color: var(--efs-blue) !important;
+}
+
+.token.boolean,
+.token.number {
+  color: var(--efs-peach) !important;
+}
+
+.token.string,
+.token.char {
+  color: var(--efs-green) !important;
+}
+
+.token.symbol {
+  color: var(--efs-yellow) !important;
+}
+
+.token.regex {
+  color: var(--efs-pink) !important;
+}
+
+.token.url {
+  color: var(--efs-green) !important;
+}
+
+.token.operator {
+  color: var(--efs-sky) !important;
+}
+
+.token.variable {
+  color: var(--efs-text) !important;
+}
+
+.token.constant {
+  color: var(--efs-peach) !important;
+}
+
+.token.property {
+  color: var(--efs-blue) !important;
+}
+
+.token.punctuation {
+  color: var(--efs-overlay2) !important;
+}
+
+.token.important {
+  color: var(--efs-mauve) !important;
+}
+
+.token.comment {
+  color: var(--efs-overlay2) !important;
+}
+
+.token.tag {
+  color: var(--efs-blue) !important;
+}
+
+.token.attr-name {
+  color: var(--efs-yellow) !important;
+}
+
+.token.attr-value {
+  color: var(--efs-green) !important;
+}
+
+.token.namespace {
+  color: var(--efs-yellow) !important;
+}
+
+.token.prolog,
+.token.doctype {
+  color: var(--efs-mauve) !important;
+}
+
+.token.cdata {
+  color: var(--efs-teal) !important;
+}
+
+.token.entity {
+  color: var(--efs-red) !important;
+}
+
+.token.atrule {
+  color: var(--efs-mauve) !important;
+}
+
+.token.selector {
+  color: var(--efs-blue) !important;
+}
+
+/* Diff */
+
+.token.deleted {
+  color: var(--efs-red) !important;
+}
+
+.token.inserted {
+  color: var(--efs-green) !important;
+}
+
+/* Other */
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}

@@ -86,7 +86,7 @@ export async function verifyMetadata(
   }
 
   const template = (await Deno.readTextFile(
-    path.join(REPO_ROOT, "template/catppuccin.user.less"),
+    path.join(REPO_ROOT, "template/everforest.user.less"),
   ))
     .split("\n");
 
@@ -150,7 +150,7 @@ export async function verifyMetadata(
 }
 
 function generateAssertions(userstyle: string, userstyles: Userstyles) {
-  const prefix = "https://github.com/catppuccin/userstyles";
+  const prefix = "https://github.com/stellaaash/everforest-userstyles";
   const userstyleData = userstyles[userstyle];
 
   if (!userstyleData) {
@@ -169,17 +169,18 @@ function generateAssertions(userstyle: string, userstyles: Userstyles) {
         userstyleData.name,
         ...Object.values(userstyleData.supports ?? {}).map(({ name }) => name),
       ].join("/")
-    } Catppuccin`,
-    namespace: `github.com/catppuccin/userstyles/styles/${userstyle}`,
+    } Everforest`,
+    namespace:
+      `github.com/stellaaash/everforest-userstyles/styles/${userstyle}`,
     homepageURL: `${prefix}/tree/main/styles/${userstyle}`,
-    description: `Soothing pastel theme for ${
+    description: `Comfortable & pleasant green theme for ${
       formatListOfItems([
         userstyleData.name,
         ...Object.values(userstyleData.supports ?? {}).map(({ name }) => name),
       ])
     }`,
-    author: "Catppuccin",
-    updateURL: `${prefix}/raw/main/styles/${userstyle}/catppuccin.user.less`,
+    author: "stellaaash (Everforest port of Catppuccin's userstyle)",
+    updateURL: `${prefix}/raw/main/styles/${userstyle}/everforest.user.less`,
     supportURL: `${prefix}/issues?q=is%3Aopen+is%3Aissue+label%3A${userstyle}`,
     license: "MIT",
     preprocessor: "less",

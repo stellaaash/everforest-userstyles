@@ -12,6 +12,6 @@ body:
   - type: textarea
     attributes:
       label: Describe your issue.
-      description: "Issues relating to individual themes should be raised via a [Userstyle Issue](https://github.com/catppuccin/userstyles/issues/new?assignees=&labels=&template=userstyle.yml) instead."
+      description: "Issues relating to individual themes should be raised via a [Userstyle Issue](https://github.com/stellaaash/everforest-userstyles/issues/new?assignees=&labels=&template=userstyle.yml) instead."
     validations:
       required: true

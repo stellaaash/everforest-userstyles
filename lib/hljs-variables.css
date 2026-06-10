@@ -1,0 +1,142 @@
+code.hljs {
+  color: var(--efs-text);
+  background: var(--efs-base);
+}
+code .hljs-keyword {
+  color: var(--efs-mauve);
+}
+code .hljs-built_in {
+  color: var(--efs-red);
+}
+code .hljs-type {
+  color: var(--efs-yellow);
+}
+code .hljs-literal {
+  color: var(--efs-peach);
+}
+code .hljs-number {
+  color: var(--efs-peach);
+}
+code .hljs-operator {
+  color: var(--efs-sky);
+}
+code .hljs-punctuation {
+  color: var(--efs-subtext1);
+}
+code .hljs-property {
+  color: var(--efs-teal);
+}
+code .hljs-regexp {
+  color: var(--efs-pink);
+}
+code .hljs-string {
+  color: var(--efs-green);
+}
+code .hljs-char.escape_ {
+  color: var(--efs-green);
+}
+code .hljs-subst {
+  color: var(--efs-subtext0);
+}
+code .hljs-symbol {
+  color: var(--efs-flamingo);
+}
+code .hljs-variable {
+  color: var(--efs-mauve);
+}
+code .hljs-variable.language_ {
+  color: var(--efs-mauve);
+}
+code .hljs-variable.constant_ {
+  color: var(--efs-peach);
+}
+code .hljs-title {
+  color: var(--efs-blue);
+}
+code .hljs-title.class_ {
+  color: var(--efs-yellow);
+}
+code .hljs-title.function_ {
+  color: var(--efs-blue);
+}
+code .hljs-params {
+  color: var(--efs-text);
+}
+code .hljs-comment {
+  color: var(--efs-overlay2);
+}
+code .hljs-doctag {
+  color: var(--efs-red);
+}
+code .hljs-meta {
+  color: var(--efs-peach);
+}
+code .hljs-section {
+  color: var(--efs-blue);
+}
+code .hljs-tag {
+  color: var(--efs-teal);
+}
+code .hljs-name {
+  color: var(--efs-mauve);
+}
+code .hljs-attr {
+  color: var(--efs-blue);
+}
+code .hljs-attribute {
+  color: var(--efs-green);
+}
+code .hljs-bullet {
+  color: var(--efs-teal);
+}
+code .hljs-code {
+  color: var(--efs-green);
+}
+code .hljs-emphasis {
+  color: var(--efs-red);
+  font-style: italic;
+}
+code .hljs-strong {
+  color: var(--efs-red);
+  font-weight: bold;
+}
+code .hljs-formula {
+  color: var(--efs-teal);
+}
+code .hljs-link {
+  color: var(--efs-sapphire);
+  font-style: italic;
+}
+code .hljs-quote {
+  color: var(--efs-green);
+  font-style: italic;
+}
+code .hljs-selector-tag {
+  color: var(--efs-yellow);
+}
+code .hljs-selector-id {
+  color: var(--efs-blue);
+}
+code .hljs-selector-class {
+  color: var(--efs-teal);
+}
+code .hljs-selector-attr {
+  color: var(--efs-mauve);
+}
+code .hljs-selector-pseudo {
+  color: var(--efs-teal);
+}
+code .hljs-template-tag {
+  color: var(--efs-flamingo);
+}
+code .hljs-template-variable {
+  color: var(--efs-flamingo);
+}
+code .hljs-addition {
+  color: var(--efs-green);
+  background: rgb(from var(--efs-green) r g b/15%);
+}
+code .hljs-deletion {
+  color: var(--efs-red);
+  background: rgb(from var(--efs-red) r g b/15%);
+}

@@ -1,0 +1,120 @@
+/* ==UserStyle==
+@name Crowdin Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/crowdin
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/crowdin
+@version 2025.09.06
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/crowdin/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Acrowdin
+@description Comfortable & pleasant green theme for Crowdin
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document regexp("https://crowdin.com(?!/translate).*") {
+  :root {
+    @media (prefers-color-scheme: light) {
+      #everforest(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #everforest(@darkFlavor);
+    }
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    :root:root:root:root:root {
+      --app-bg: @mantle;
+      --body-bg: @base;
+      --light-bg: @surface0;
+      --search-bg: @surface0;
+      --super-light-bg: @surface1;
+      --body-color: @text;
+      --link-hover: @green;
+      --primary: @green;
+      --secondary: @rosewater;
+      --tertiary: @pink;
+      --primary-btn: @green;
+      --primary-btn-hover: @teal;
+      --warning-content: @yellow;
+      --info: @blue;
+      --crowdin-primary-blue-gray-05: @surface1;
+      --crowdin-primary-blue-gray: @overlay0;
+    }
+
+    .btn-primary,
+    .btn-primary:hover {
+      color: @base;
+    }
+
+    .btn-outline-primary,
+    .btn-outline-primary:hover {
+      color: @green;
+      border-color: @green;
+    }
+  }
+}
+
+@-moz-document regexp("https://crowdin.com/translate/.*") {
+  @media (prefers-color-scheme: light) {
+    #everforest(@lightFlavor);
+  }
+  @media (prefers-color-scheme: dark) {
+    #everforest(@darkFlavor);
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    body {
+      background-color: @mantle !important;
+      color: @text !important;
+    }
+
+    #left_panel,
+    .nav-tabs,
+    .navbar-inner.editor-navbar,
+    #discussions_control,
+    #main_menu {
+      background-color: @surface0 !important;
+    }
+
+    #editor-center-layout,
+    .editor-pane-inner,
+    #translation_wrapper,
+    #translation_text_container,
+    .texts-to-translate-header,
+    #right_panel,
+    .texts-to-translate-paging,
+    #asset_preview_wrapper.no-preview,
+    .editor-pane-title-and-buttons-helper {
+      background-color: @base !important;
+      color: @text !important;
+    }
+
+    .body.dark-theme #main_menu .nav-pills > li.active > a {
+      background-color: @blue;
+    }
+
+    .progress .bar-validate {
+      background-color: @lavender;
+    }
+    .progress .bar-translate {
+      background-color: @sapphire;
+    }
+
+    a,
+    .btn-link {
+      color: @rosewater !important;
+    }
+  }
+}

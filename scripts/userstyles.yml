@@ -1,80 +1,5 @@
 collaborators:
-  - &nik-rev nik-rev
-  - &AlwaysNur AlwaysNur
-  - &AnubisNekhet AnubisNekhet
-  - &ndsboy ndsboy
-  - &jn-sena jn-sena
-  - &watatomo watatomo
-  - &ryanccn ryanccn
-  - &Pocco81 Pocco81
-  - &GlowingUmbreon GlowingUmbreon
-  - &justTOBBI justTOBBI
-  - &unseen-ninja unseen-ninja
-  - &lucasmelin lucasmelin
-  - &Gingeh Gingeh
-  - &isabelroses isabelroses
-  - &thismoon thismoon
-  - &sydrinea sydrinea
-  - &soya-daizu soya-daizu
-  - &jayylmao jayylmao
-  - &Sekki21956 Sekki21956
-  - &nekowinston nekowinston
-  - &Tnixc Tnixc
-  - &elkrien elkrien
-  - &TheMemeSniper TheMemeSniper
-  - &spaghettiosareyummy spaghettiosareyummy
-  - &Stonks3141 Stonks3141
-  - &rubyowo rubyowo
-  - &Gandalf-the-Blue Gandalf-the-Blue
-  - &FrancoRav FrancoRav
-  - &coldenate coldenate
-  - &skelebro1 skelebro1
-  - &r58Playz r58Playz
-  - &rockquiet rockquiet
-  - &Nyameliaaaa Nyameliaaaa
-  - &Meowcelinee Meowcelinee
-  - &bartlibert bartlibert
-  - &BlankParticle BlankParticle
-  - &GenShibe GenShibe
-  - &coopw1 coopw1
-  - &RoootTheFox RoootTheFox
-  - &itzTheMeow itzTheMeow
-  - &Dandraghas Dandraghas
-  - &uncenter uncenter
-  - &thomas-philippot thomas-philippot
-  - &Guaxinim5573 Guaxinim5573
-  - &trinkey trinkey
-  - &NK308 NK308
-  - &00dani 00dani
-  - &kerichdev kerichdev
-  - &Flapperoo Flapperoo
-  - &sofiedotcafe sofiedotcafe
-  - &stellophiliac stellophiliac
-  - &bunfluff bunfluff
-  - &NeonGamerBot-QK NeonGamerBot-QK
-  - &orangci orangci
-  - &Lichthagel Lichthagel
-  - &comfysage comfysage
-  - &janTatesa janTatesa
-  - &mxgic1337 mxgic1337
-  - &steinuil steinuil
-  - &husjon husjon
-  - &RaiderHCPlay RaiderHCPlay
-  - &ruiiiijiiiiang ruiiiijiiiiang
-  - &pynappo pynappo
-  - &nuexq nuexq
-  - &WalkQuackBack WalkQuackBack
-  - &gradylink gradylink
-  - &ashish0kumar ashish0kumar
-  - &shnjd shnjd
-  - &zenoix zenoix
-  - &incognitotgt incognitotgt
-  - &NekoDrone NekoDrone
-  - &adamperkowski adamperkowski
-  - &ImenaOphelia ImenaOphelia
-  - &koibtw koibtw
-  - &TheAnonymousCrusher TheAnonymousCrusher
-  - &42willow 42willow
+  - &stellaaash stellaaash
 
 userstyles:
   advent-of-code:
@@ -83,26 +8,26 @@ userstyles:
     categories: [game, entertainment]
     icon: adventofcode
     color: yellow
-    current-maintainers: [*rubyowo]
+    current-maintainers: [*stellaaash]
   alacritty.org:
     name: alacritty.org
     link: https://alacritty.org
     categories: [terminal, development]
     icon: alacritty
     color: peach
-    current-maintainers: [*AlwaysNur]
+    current-maintainers: [*stellaaash]
   alternativeto:
     name: AlternativeTo
     link: https://alternativeto.net
     categories: [productivity, discussion_forum]
     color: sapphire
-    current-maintainers: [*thismoon]
+    current-maintainers: [*stellaaash]
   amplenote:
     name: Amplenote
     link: https://www.amplenote.com
     categories: [note_taking]
     color: blue
-    current-maintainers: [*stellophiliac]
+    current-maintainers: [*stellaaash]
   anilist:
     name: AniList
     link: https://anilist.co
@@ -113,13 +38,13 @@ userstyles:
       anichart:
         name: AniChart
         link: https://anichart.net
-    current-maintainers: [*AnubisNekhet]
+    current-maintainers: [*stellaaash]
   anonymous-overflow:
     name: Anonymous Overflow
     categories: [discussion_forum, wiki]
     color: green
     link: https://github.com/httpjamesm/AnonymousOverflow
-    current-maintainers: [*ImenaOphelia]
+    current-maintainers: [*stellaaash]
   arch-wiki:
     name: Arch Wiki
     link: https://wiki.archlinux.org
@@ -127,14 +52,13 @@ userstyles:
     icon: archlinux
     color: blue
     note: "Make sure to use the default **Light** theme."
-    current-maintainers: []
-    past-maintainers: [*GenShibe]
+    current-maintainers: [*stellaaash]
   boringproxy:
     name: boringproxy
     link: https://boringproxy.io
     categories: [development]
     color: text
-    current-maintainers: [*Gandalf-the-Blue]
+    current-maintainers: [*stellaaash]
   brave-search:
     name: Brave Search
     link: https://search.brave.com
@@ -142,180 +66,167 @@ userstyles:
     icon: brave
     color: peach
     note: "Make sure to set the theme to either dark or light in Brave Search settings, as the automatic setting will not work."
-    current-maintainers: [*ndsboy]
+    current-maintainers: [*stellaaash]
   bsky:
     name: Bluesky Social
     link: https://bsky.app
     categories: [social_networking]
     icon: bluesky
     color: blue
-    current-maintainers: [*RoootTheFox]
+    current-maintainers: [*stellaaash]
   bstats:
     name: bStats
     link: https://bstats.org
     categories: [analytics, game_development]
     color: green
     note: "Make sure to use the default **Teal** theme from the built-in color picker (located at the bottom of the page) for the best experience!"
-    current-maintainers: [*rockquiet]
+    current-maintainers: [*stellaaash]
   canvas-lms:
     name: Canvas LMS
     link: https://www.instructure.com/canvas
     categories: [education]
     icon: canvas
     color: red
-    current-maintainers: [*pynappo]
-    past-maintainers: [*TheMemeSniper]
+    current-maintainers: [*stellaaash]
   chatgpt:
     name: ChatGPT
     link: https://chat.openai.com
     categories: [artificial_intelligence]
     icon: openai
     color: green
-    current-maintainers: [*uncenter]
-    past-maintainers: [*rubyowo]
+    current-maintainers: [*stellaaash]
   chatreplay:
     name: ChatReplay
     link: https://chatreplay.stream
     categories: [entertainment, social_networking]
     color: peach
-    current-maintainers: [*AnubisNekhet]
+    current-maintainers: [*stellaaash]
   chess.com:
     name: Chess.com
     link: https://chess.com
     categories: [game]
     icon: chessdotcom
     color: green
-    current-maintainers: [*uncenter]
-    past-maintainers: [*skelebro1, *isabelroses, *coldenate]
+    current-maintainers: [*stellaaash]
   cinny:
     name: Cinny
     link: https://cinny.in
     categories: [social_networking]
     color: text
-    current-maintainers: [*jn-sena]
+    current-maintainers: [*stellaaash]
   claude:
     name: Claude
     link: https://claude.ai
     categories: [artificial_intelligence, productivity]
     color: peach
     icon: claude
-    current-maintainers: [*ruiiiijiiiiang]
-  codeberg:
-    name: Codeberg
-    link: https://codeberg.org
-    categories: [development]
-    icon: codeberg
-    color: blue
-    current-maintainers: [*isabelroses]
-    past-maintainers: [*justTOBBI]
+    current-maintainers: [*stellaaash]
   cobalt:
     name: cobalt
     link: https://cobalt.tools
     categories: [productivity, photo_and_video]
     color: text
-    current-maintainers: [*kerichdev]
+    current-maintainers: [*stellaaash]
   crates.io:
     name: crates.io
     link: https://crates.io
     categories: [package_registry]
     icon: rust
     color: yellow
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   crowdin:
     name: Crowdin
     link: https://crowdin.com
     categories: [translation_tool]
     icon: crowdin
     color: text
-    current-maintainers: [*ryanccn]
+    current-maintainers: [*stellaaash]
   deepl:
     name: DeepL
     link: https://deepl.com
     categories: [translation_tool]
     icon: deepl
     color: blue
-    current-maintainers: [*watatomo]
+    current-maintainers: [*stellaaash]
   deepseek:
     name: DeepSeek
     link: https://chat.deepseek.com
     categories: [artificial_intelligence]
     icon: deepseek
     color: blue
-    current-maintainers: [*WalkQuackBack]
+    current-maintainers: [*stellaaash]
   desmos:
     name: Desmos
     link: https://desmos.com
     categories: [education]
     color: green
     note: "This userstyle is currently incompatible with DesModder's Visual>Syntax Highlighting plugin."
-    current-maintainers: [*gradylink]
+    current-maintainers: [*stellaaash]
   dev.to:
     name: DEV Community
     link: https://dev.to
     categories: [discussion_forum]
     icon: devdotto
     color: text
-    current-maintainers: [*shnjd]
+    current-maintainers: [*stellaaash]
   devdocs:
     name: DevDocs
     link: https://devdocs.io
     categories: [development, wiki]
     color: text
-    current-maintainers: [*ashish0kumar]
+    current-maintainers: [*stellaaash]
   docs.deno.com:
     name: docs.deno.com
     link: https://docs.deno.com
     categories: [development]
     icon: deno
     color: green
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   docs.rs:
     name: docs.rs
     link: https://docs.rs
     categories: [development]
     icon: docsdotrs
     color: yellow
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   duckduckgo:
     name: DuckDuckGo
     link: https://duckduckgo.com
     categories: [search_engine]
     icon: duckduckgo
     color: peach
-    current-maintainers: [*GenShibe]
+    current-maintainers: [*stellaaash]
   ecosia:
     name: Ecosia
     link: https://www.ecosia.org
     categories: [search_engine]
     color: green
-    current-maintainers: []
-    past-maintainers: [*isabelroses]
+    current-maintainers: [*stellaaash]
   elk:
     name: Elk
     link: https://elk.zone
     categories: [social_networking]
     color: peach
-    current-maintainers: [*ryanccn]
+    current-maintainers: [*stellaaash]
   freedesktop:
     name: freedesktop.org
     link: https://www.freedesktop.org
     categories: [development]
     icon: freedesktopdotorg
     color: blue
-    current-maintainers: [*NK308]
+    current-maintainers: [*stellaaash]
   formative:
     name: Formative
     link: https://app.formative.com/home
     categories: [education]
     color: blue
-    current-maintainers: []
-    past-maintainers: [*r58Playz]
+    current-maintainers: [*stellaaash]
   ghostty.org:
     name: Ghostty.org
     link: https://ghostty.org
     categories: [terminal]
     color: blue
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   github:
     name: GitHub
     link: https://github.com
@@ -323,15 +234,14 @@ userstyles:
     icon: github
     color: text
     note: "Use the **Light default** or **Dark default** themes and disable *Increase contrast* under GitHub's [Theme preferences](https://github.com/settings/appearance)."
-    current-maintainers: [*uncenter]
-    past-maintainers: [*unseen-ninja, *Pocco81, *GlowingUmbreon]
+    current-maintainers: [*stellaaash]
   gleam.run:
     name: gleam.run
     link: https://gleam.run
     categories: [development]
     icon: gleam
     color: pink
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   gmail:
     name: Gmail
     link: https://mail.google.com
@@ -339,197 +249,191 @@ userstyles:
     icon: gmail
     color: peach
     note: "Switch to the default dark theme via the **Settings** > **Themes** > **View all** for the best experience!"
-    current-maintainers: [*uncenter]
-    past-maintainers: [*isabelroses]
+    current-maintainers: [*stellaaash]
   go.dev:
     name: go.dev
     link: https://go.dev
     categories: [development, wiki]
     icon: go
     color: sapphire
-    current-maintainers: [*Flapperoo]
+    current-maintainers: [*stellaaash]
   google:
     name: Google
     link: https://google.com
     categories: [search_engine]
     icon: google
     color: sapphire
-    current-maintainers: []
+    current-maintainers: [*stellaaash]
   google-drive:
     name: Google Drive
     link: https://drive.google.com
     categories: [productivity]
     icon: googledrive
     color: blue
-    current-maintainers: [*r58Playz, *WalkQuackBack]
+    current-maintainers: [*stellaaash]
   google-photos:
     name: Google Photos
     link: https://photos.google.com
     categories: [photo_and_video]
     icon: googlephotos
     color: sapphire
-    current-maintainers: [*GenShibe, *WalkQuackBack]
+    current-maintainers: [*stellaaash]
   grabify:
     name: Grabify
     link: https://grabify.link
     categories: [development, productivity]
     color: teal
-    current-maintainers: [*trinkey]
+    current-maintainers: [*stellaaash]
   graphite:
     name: Graphite
     link: https://app.graphite.com
     categories: [development, productivity]
     icon: graphite
     color: text
-    current-maintainers: []
-    past-maintainers: [*isabelroses]
+    current-maintainers: [*stellaaash]
   google-gemini:
     name: Google Gemini
     link: https://gemini.google.com
     categories: [artificial_intelligence]
     icon: googlegemini
     color: mauve
-    current-maintainers: [*Dandraghas, *WalkQuackBack]
+    current-maintainers: [*stellaaash]
   hackage:
     name: Hackage
     link: https://hackage.haskell.org
     categories: [package_registry]
     icon: haskell
     color: mauve
-    current-maintainers: [*jn-sena]
+    current-maintainers: [*stellaaash]
   hacker-news:
     name: Hacker News
     link: https://news.ycombinator.com
     categories: [discussion_forum]
     icon: ycombinator
     color: peach
-    current-maintainers: [*lucasmelin]
+    current-maintainers: [*stellaaash]
   have-i-been-pwned:
     name: Have I Been Pwned
     link: https://haveibeenpwned.com
     categories: [productivity]
     color: blue
-    current-maintainers: [*trinkey]
+    current-maintainers: [*stellaaash]
   holodex:
     name: Holodex
     link: https://holodex.net
     categories: [entertainment, social_networking, photo_and_video]
     color: pink
     note: Holodex's selected theme is ignored.
-    current-maintainers: [*Guaxinim5573]
+    current-maintainers: [*stellaaash]
   home-manager-options-search:
     name: Home Manager Options Search
     link: https://home-manager-options.extranix.com
     categories: [development]
     color: blue
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   homepage:
     name: homepage
     link: https://github.com/benphelps/homepage
     categories: [productivity]
     color: sky
-    current-maintainers: [*Gandalf-the-Blue]
+    current-maintainers: [*stellaaash]
   hoogle:
     name: Hoogle
     link: https://hoogle.haskell.org
     categories: [development, search_engine]
     icon: haskell
     color: mauve
-    current-maintainers: [*jn-sena]
+    current-maintainers: [*stellaaash]
   hoppscotch:
     name: Hoppscotch
     link: https://hoppscotch.io
     categories: [development, productivity]
     icon: hoppscotch
     color: green
-    current-maintainers: [*justTOBBI]
+    current-maintainers: [*stellaaash]
   learn-x-in-y-minutes:
     name: Learn X in Y Minutes
     link: https://learnxinyminutes.com
     categories: [development, wiki]
     color: blue
-    current-maintainers: [*nik-rev]
+    current-maintainers: [*stellaaash]
   hyperpipe:
     name: Hyperpipe
     link: https://hyperpipe.surge.sh
     categories: [music]
     color: teal
-    current-maintainers: []
-    past-maintainers: [*jn-sena]
+    current-maintainers: [*stellaaash]
   ichi.moe:
     name: ichi.moe
     link: https://ichi.moe
     categories: [translation_tool]
     color: pink
-    current-maintainers: [*watatomo]
+    current-maintainers: [*stellaaash]
   inoreader:
     name: inoreader
     link: https://inoreader.com
     categories: [productivity]
     icon: inoreader
     color: blue
-    current-maintainers: [*thomas-philippot]
+    current-maintainers: [*stellaaash]
   indie-wiki-buddy:
     name: Indie Wiki Buddy
     link: https://getindie.wiki
     categories: [browser_extension]
     color: blue
-    current-maintainers: [*thismoon]
+    current-maintainers: [*stellaaash]
   instagram:
     name: Instagram
     link: https://instagram.com
     categories: [social_networking, photo_and_video]
     icon: instagram
     color: pink
-    current-maintainers: [*GenShibe]
-    past-maintainers: [*isabelroses]
+    current-maintainers: [*stellaaash]
   invidious:
     name: Invidious
     link: https://invidious.io
     categories: [entertainment]
     icon: youtube
     color: red
-    current-maintainers: []
-    past-maintainers: [*unseen-ninja, *nekowinston]
+    current-maintainers: [*stellaaash]
   invokeai:
     name: InvokeAI
     link: https://invoke-ai.github.io/InvokeAI
     categories: [artificial_intelligence, productivity]
     color: yellow
-    current-maintainers: [*ryanccn]
+    current-maintainers: [*stellaaash]
   jisho:
     name: Jisho
     link: https://jisho.org
     categories: [translation_tool]
     color: green
-    current-maintainers: [*Lichthagel]
+    current-maintainers: [*stellaaash]
   keybr.com:
     name: keybr.com
     link: https://keybr.com
     categories: [productivity, education]
     color: text
-    current-maintainers: [*janTatesa]
+    current-maintainers: [*stellaaash]
   keyoxide:
     name: Keyoxide
     link: https://keyoxide.org
     categories: [development]
     color: mauve
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   lastfm:
     name: Last.fm
     link: https://last.fm
     categories: [music, analytics]
     icon: lastdotfm
     color: red
-    current-maintainers: [*AnubisNekhet]
-    past-maintainers: [*Gingeh]
+    current-maintainers: [*stellaaash]
   lemmy:
     name: Lemmy
     link: https://lemmy.world
     categories: [discussion_forum, social_networking]
     icon: lemmy
     color: green
-    current-maintainers: [*Gandalf-the-Blue]
+    current-maintainers: [*stellaaash]
   libreddit:
     name: Libreddit
     link: https://github.com/libreddit/libreddit
@@ -540,8 +444,7 @@ userstyles:
       redlib:
         name: Redlib
         link: https://github.com/redlib-org/redlib
-    current-maintainers: []
-    past-maintainers: [*unseen-ninja]
+    current-maintainers: [*stellaaash]
   lichess:
     name: Lichess
     link: https://lichess.org
@@ -549,71 +452,69 @@ userstyles:
     icon: lichess
     color: text
     note: "Switch to a default Lichess light/dark theme via **Username** > **Background** for the best experience!"
-    current-maintainers: [*coopw1, *zenoix]
+    current-maintainers: [*stellaaash]
   lingva:
     name: Lingva
     link: https://github.com/thedaviddelta/lingva-translate
     categories: [translation_tool]
     color: green
-    current-maintainers: [*rubyowo]
+    current-maintainers: [*stellaaash]
   linkedin:
     name: LinkedIn
     link: https://www.linkedin.com
     categories: [social_networking, productivity]
     icon: linkedin
     color: blue
-    current-maintainers: []
-    past-maintainers: [*isabelroses]
+    current-maintainers: [*stellaaash]
   listenbrainz:
     name: ListenBrainz
     link: https://listenbrainz.org
     categories: [music]
     icon: musicbrainz
     color: peach
-    current-maintainers: [*00dani]
+    current-maintainers: [*stellaaash]
   lobste.rs:
     name: Lobsters
     link: https://lobste.rs
     categories: [discussion_forum, social_networking]
     icon: lobsters
     color: red
-    current-maintainers: [*steinuil]
+    current-maintainers: [*stellaaash]
   mastodon:
     name: Mastodon
     link: https://github.com/mastodon/mastodon
     categories: [social_networking]
     icon: mastodon
     color: lavender
-    current-maintainers: [*comfysage]
-    past-maintainers: [*unseen-ninja, *isabelroses]
+    current-maintainers: [*stellaaash]
   mdbook:
     name: mdBook
     link: https://rust-lang.github.io/mdBook/
     categories: [documentation_generator]
     icon: mdbook
     color: text
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   mdn:
     name: MDN
     link: https://developer.mozilla.org
     categories: [development, wiki]
     icon: mdnwebdocs
     color: text
-    current-maintainers: [*soya-daizu]
+    current-maintainers: [*stellaaash]
   modrinth:
     name: Modrinth
     link: https://modrinth.com
     categories: [game]
     icon: modrinth
     color: green
-    current-maintainers: [*thismoon]
+    current-maintainers: [*stellaaash]
   microsoft-word:
     name: Microsoft Word
     link: https://office.com
     categories: [productivity]
     icon: microsoftword
     color: blue
-    current-maintainers: []
+    current-maintainers: [*stellaaash]
   migadu-webmail:
     name: Migadu Webmail
     link: https://webmail.migadu.com
@@ -621,41 +522,41 @@ userstyles:
     icon: migadu
     color: blue
     note: Set Migadu Webmail's built-in theme to 'Migadu' for the optimal experience.
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   minesweeper:
     name: Minesweeper Online
     link: https://minesweeper.online
     categories: [game]
     color: text
-    current-maintainers: []
+    current-maintainers: [*stellaaash]
   namemc:
     name: NameMC
     link: https://namemc.com
     categories: [game_development, analytics]
     icon: namemc
     color: blue
-    current-maintainers: [*Meowcelinee]
+    current-maintainers: [*stellaaash]
   neovim.io:
     name: neovim.io
     link: https://neovim.io
     categories: [development]
     icon: neovim
     color: green
-    current-maintainers: [*comfysage]
+    current-maintainers: [*stellaaash]
   npmx:
     name: npmx
     link: https://npmx.dev
     categories: [package_registry]
     color: text
     note: npmx-specific accent color appearance options at https://npmx.dev/settings are overriden by this userstyle.
-    current-maintainers: [*42willow]
+    current-maintainers: [*stellaaash]
   nitter:
     name: Nitter
     link: https://nitter.net
     categories: [social_networking, discussion_forum]
     icon: twitter
     color: blue
-    current-maintainers: [*AnubisNekhet]
+    current-maintainers: [*stellaaash]
   nixos-manual:
     name: NixOS Manual
     link: https://nixos.org/manual/nixos
@@ -666,113 +567,108 @@ userstyles:
       nixpkgs-manual:
         name: "Nixpkgs Manual"
         link: https://nixos.org/manual/nixpkgs
-    current-maintainers: [*husjon]
+    current-maintainers: [*stellaaash]
   nixos-search:
     name: NixOS Search
     link: https://search.nixos.org
     categories: [search_engine]
     icon: nixos
     color: blue
-    current-maintainers: [*sydrinea]
+    current-maintainers: [*stellaaash]
   wiki.nixos.org:
     name: NixOS Wiki
     link: https://wiki.nixos.org
     categories: [wiki, development]
     icon: nixos
     color: blue
-    current-maintainers: [*orangci]
-    past-maintainers: [*nekowinston]
+    current-maintainers: [*stellaaash]
   npm:
     name: npm
     link: https://www.npmjs.com
     categories: [package_registry]
     icon: npm
     color: red
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   ollama:
     name: Ollama
     link: https://ollama.com
     categories: [artificial_intelligence, development]
     color: text
-    current-maintainers: [*NeonGamerBot-QK]
+    current-maintainers: [*stellaaash]
   openmediavault:
     name: openmediavault
     link: https://www.openmediavault.org
     categories: [file_manager, productivity]
     icon: openmediavault
     color: sky
-    current-maintainers: [*Gandalf-the-Blue]
+    current-maintainers: [*stellaaash]
   paste.rs:
     name: paste.rs
     link: https://paste.rs
     categories: [development]
     icon: pastebin
     color: peach
-    current-maintainers: [*Guaxinim5573]
-    past-maintainers: [*Stonks3141]
+    current-maintainers: [*stellaaash]
   perplexity:
     name: Perplexity
     link: https://www.perplexity.ai
     categories: [artificial_intelligence, search_engine]
     icon: perplexity
     color: teal
-    current-maintainers: [*Tnixc]
-    past-maintainers: [*isabelroses]
+    current-maintainers: [*stellaaash]
   phanpy:
     name: Phanpy
     link: https://phanpy.social
     categories: [social_networking]
     color: blue
-    current-maintainers: [*Guaxinim5573]
+    current-maintainers: [*stellaaash]
   picrew:
     name: Picrew
     link: https://picrew.me
     categories: [entertainment, productivity]
     icon: picrew
     color: yellow
-    current-maintainers: [*Meowcelinee]
+    current-maintainers: [*stellaaash]
   pinterest:
     name: Pinterest
     link: https://www.pinterest.com
     categories: [photo_and_video, entertainment, social_networking]
     icon: pinterest
     color: red
-    current-maintainers: [*nuexq]
-    past-maintainers: [*jn-sena]
+    current-maintainers: [*stellaaash]
   planet-minecraft:
     name: Planet Minecraft
     link: https://planetminecraft.com
     categories: [game]
     color: green
-    current-maintainers: [*Nyameliaaaa]
+    current-maintainers: [*stellaaash]
   poe:
     name: Poe
     link: https://poe.com
     categories: [artificial_intelligence]
     icon: poe
     color: blue
-    current-maintainers: [*TheAnonymousCrusher]
+    current-maintainers: [*stellaaash]
   porkbun:
     name: Porkbun
     link: https://porkbun.com
     categories: [productivity]
     icon: porkbun
     color: pink
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   pronouns.cc:
     name: pronouns.cc
     link: https://pronouns.cc
     categories: [social_networking]
     color: mauve
-    current-maintainers: [*comfysage]
-    past-maintainers: [*NeonGamerBot-QK]
+    current-maintainers: [*stellaaash]
   pronouns.page:
     name: Pronouns.page
     link: https://pronouns.page
     categories: [social_networking]
     icon: pronounsdotpage
     color: pink
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   proton:
     name: Proton
     link: https://proton.me
@@ -780,140 +676,137 @@ userstyles:
     icon: protonmail
     color: mauve
     note: Set Proton Mail's built-in theme to 'Snow' if you're using Latte or 'Carbon' if you're using the others.
-    current-maintainers: [*soya-daizu]
+    current-maintainers: [*stellaaash]
   pypi:
     name: PyPI
     link: https://pypi.org
     categories: [package_registry]
     color: sapphire
-    current-maintainers: [*trinkey]
+    current-maintainers: [*stellaaash]
   pythonanywhere:
     name: PythonAnywhere
     link: https://pythonanywhere.com
     categories: [development]
     icon: pythonanywhere
     color: sapphire
-    current-maintainers: [*trinkey]
+    current-maintainers: [*stellaaash]
   quizlet:
     name: Quizlet
     link: https://quizlet.com
     categories: [education, productivity]
     icon: quizlet
     color: mauve
-    current-maintainers: [*spaghettiosareyummy]
+    current-maintainers: [*stellaaash]
   raindrop:
     name: Raindrop
     link: https://app.raindrop.io
     categories: [productivity]
     color: blue
-    current-maintainers: [*thismoon]
+    current-maintainers: [*stellaaash]
   react.dev:
     name: React.dev
     link: https://react.dev
     categories: [development]
     icon: react
     color: sapphire
-    current-maintainers: [*RaiderHCPlay]
+    current-maintainers: [*stellaaash]
   reddit:
     name: Reddit
     link: https://reddit.com
     categories: [discussion_forum, social_networking]
     color: red
     icon: reddit
-    current-maintainers: []
-    past-maintainers: [*jayylmao, *rubyowo]
+    current-maintainers: [*stellaaash]
   regex101:
     name: regex101
     link: https://regex101.com
     categories: [development]
     color: blue
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   rentry.co:
     name: Rentry.co
     link: https://rentry.co
     categories: [productivity]
     color: text
-    current-maintainers: [*thismoon]
+    current-maintainers: [*stellaaash]
   scalar:
     name: Scalar
     link: https://scalar.com
     categories: [development]
     icon: scalar
     color: text
-    current-maintainers: [*incognitotgt]
+    current-maintainers: [*stellaaash]
   searchix:
     name: Searchix
     link: https://searchix.ovh
     categories: [development, search_engine]
     color: blue
-    current-maintainers: [*koibtw]
+    current-maintainers: [*stellaaash]
   searxng:
     name: SearXNG
     link: https://github.com/searxng/searxng
     categories: [search_engine]
     icon: searxng
     color: blue
-    current-maintainers: [*Sekki21956, *ryanccn]
+    current-maintainers: [*stellaaash]
   seventv:
     name: 7TV
     link: https://7tv.app
     categories: [entertainment, browser_extension]
     color: sapphire
-    current-maintainers: [*mxgic1337]
+    current-maintainers: [*stellaaash]
   shinigami-eyes:
     name: Shinigami Eyes
     link: https://shinigami-eyes.github.io
     categories: [browser_extension, social_networking]
     color: mauve
-    current-maintainers: [*sofiedotcafe]
+    current-maintainers: [*stellaaash]
   snapchat-web:
     name: Snapchat Web
     link: https://web.snapchat.com
     categories: [social_networking, photo_and_video]
     icon: snapchat
     color: yellow
-    current-maintainers: [*itzTheMeow]
+    current-maintainers: [*stellaaash]
   spotify-web:
     name: Spotify Web
     link: https://open.spotify.com
     categories: [music]
     icon: spotify
     color: green
-    current-maintainers: [*Tnixc]
+    current-maintainers: [*stellaaash]
   stack-overflow:
     name: Stack Overflow
     link: https://stackoverflow.com
     categories: [discussion_forum, wiki]
     icon: stackoverflow
     color: peach
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   startpage:
     name: Startpage
     link: https://startpage.com
     categories: [search_engine]
     color: lavender
-    current-maintainers: [*WalkQuackBack]
-    past-maintainers: [*bartlibert]
+    current-maintainers: [*stellaaash]
   status.cafe:
     name: status.cafe
     link: https://status.cafe
     categories: [social_networking]
     color: sapphire
-    current-maintainers: [*bunfluff]
+    current-maintainers: [*stellaaash]
   stylus:
     name: Stylus
     link: https://github.com/openstyles/stylus
     categories: [browser_extension]
     color: teal
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   substack:
     name: Substack
     link: https://substack.com
     categories: [news_and_journalism]
     icon: substack
     color: peach
-    current-maintainers: [*uncenter]
-    past-maintainers: [*nekowinston]
+    current-maintainers: [*stellaaash]
   syncthing:
     name: Syncthing
     link: https://syncthing.net
@@ -921,28 +814,27 @@ userstyles:
     icon: syncthing
     color: sapphire
     note: This theme is designed to be used with the default WebGUI and default theme provided by Syncthing. This does not theme syncthing.net.
-    current-maintainers: [*BlankParticle]
+    current-maintainers: [*stellaaash]
   tabnews:
     name: TabNews
     link: https://tabnews.com.br
     categories: [discussion_forum, social_networking]
     color: text
-    current-maintainers: [*Guaxinim5573]
+    current-maintainers: [*stellaaash]
   tldraw:
     name: tldraw
     link: https://www.tldraw.com
     categories: [productivity]
     icon: tldraw
     color: text
-    note: This theme only changes how the colors appear on the tldraw canvas. Exported graphics **will not be Catppuccin-themed**.
-    current-maintainers: [*NekoDrone]
-    past-maintainers: [*GenShibe, *uncenter]
+    note: This theme only changes how the colors appear on the tldraw canvas. Exported graphics **will not be Everforest-themed**.
+    current-maintainers: [*stellaaash]
   trinket:
     name: Trinket
     link: https://trinket.io
     categories: [development]
     color: blue
-    current-maintainers: [*trinkey]
+    current-maintainers: [*stellaaash]
   tuta:
     name: Tuta
     link: https://tuta.com
@@ -950,14 +842,14 @@ userstyles:
     icon: tutanota
     color: maroon
     note: Set Tuta's built-in theme to either **light** if you're using Latte or **dark** if you're using the others.
-    current-maintainers: [*ryanccn]
+    current-maintainers: [*stellaaash]
   twitch:
     name: Twitch
     link: https://twitch.tv
     categories: [entertainment, social_networking]
     icon: twitch
     color: mauve
-    current-maintainers: [*uncenter, *mxgic1337]
+    current-maintainers: [*stellaaash]
   twitter:
     name: Twitter
     link: https://twitter.com
@@ -965,7 +857,7 @@ userstyles:
     color: blue
     icon: twitter
     note: Set Twitter's built-in theme to **Lights out** with the blue accent.
-    current-maintainers: [*watatomo]
+    current-maintainers: [*stellaaash]
   vercel:
     name: Vercel
     link: https://vercel.com
@@ -976,53 +868,52 @@ userstyles:
       next.js:
         name: Next.js
         link: https://nextjs.org
-    current-maintainers: [*ryanccn, *Dandraghas]
+    current-maintainers: [*stellaaash]
   vikunja:
     name: Vikunja
     link: https://vikunja.io
     categories: [productivity, note_taking]
     icon: vikunja
     color: blue
-    current-maintainers: [*Guaxinim5573]
+    current-maintainers: [*stellaaash]
   web.dev:
     name: web.dev
     link: https://web.dev
     categories: [development]
     color: blue
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   whatsapp-web:
     name: WhatsApp Web
     link: https://web.whatsapp.com
     categories: [social_networking]
     icon: whatsapp
     color: green
-    current-maintainers: [*FrancoRav, *WalkQuackBack]
+    current-maintainers: [*stellaaash]
   wikipedia:
     name: Wikipedia
     link: https://www.wikipedia.org
     categories: [wiki, search_engine, productivity]
     icon: wikipedia
     color: text
-    current-maintainers: [*uncenter]
+    current-maintainers: [*stellaaash]
   wikiwand:
     name: Wikiwand
     link: https://www.wikiwand.com
     categories: [wiki, productivity]
     icon: wikipedia
     color: text
-    current-maintainers: [*Tnixc]
+    current-maintainers: [*stellaaash]
   youtube:
     name: YouTube
     link: https://youtube.com
     categories: [entertainment, social_networking, photo_and_video]
     icon: youtube
     color: red
-    current-maintainers: [*isabelroses, *uncenter]
-    past-maintainers: [*elkrien]
+    current-maintainers: [*stellaaash]
   zen-browser-docs:
     name: Zen Browser Docs
     link: https://zen-browser.app
     categories: [productivity]
     color: peach
-    current-maintainers: [*ashish0kumar]
+    current-maintainers: [*stellaaash]
 # yaml-language-server: $schema=userstyles.schema.json

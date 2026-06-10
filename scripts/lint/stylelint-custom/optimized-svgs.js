@@ -11,6 +11,8 @@ const ruleName = "catppuccin/optimized-svgs";
 
 const meta = {
   fixable: true,
+  url:
+    "https://github.com/stellaaash/everforest-userstyles/tree/main/scripts/lint/stylelint-custom",
 };
 
 const messages = ruleMessages(ruleName, {

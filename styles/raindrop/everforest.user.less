@@ -1,0 +1,120 @@
+/* ==UserStyle==
+@name Raindrop Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/raindrop
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/raindrop
+@version 2025.09.06
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/raindrop/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Araindrop
+@description Comfortable & pleasant green theme for Raindrop
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("app.raindrop.io") {
+  [data-theme="night"] {
+    #everforest(@darkFlavor) !important;
+  }
+  [data-theme="day"],
+  [data-theme="sunset"] {
+    #everforest(@lightFlavor);
+  }
+
+  // theme selector previews
+  [class^="theme-"] {
+    &[data-index="0"],
+    &[data-index="2"] > [class^="main-"],
+    &[data-index="3"] {
+      #everforest(@lightFlavor) !important;
+    }
+    &[data-index="1"],
+    &[data-index="2"] > [class^="sidebar-"] {
+      #everforest(@darkFlavor) !important;
+    }
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    &,
+    [data-theme] {
+      --background-color: @base;
+      --disable-background-color: @crust;
+      --disable-text-color: @overlay1;
+      --accent-color: @accent;
+      --alternative-background-color: @mantle;
+      --sidebar-background-color: @mantle;
+      --hover-background-color: fade(@overlay0, 20%);
+      --active-background-color: @surface1;
+      --primary-text-color: @text;
+      --secondary-text-color: @subtext0;
+      --shadow-color: fade(@text, 10%);
+      --shadow-light-color: fade(@text, 10%);
+      --danger-color: @red;
+      --important-color: @red;
+      --success-color: @green;
+      --highlights-color: @mauve;
+      --reminder-color: @peach;
+      --note-color: @yellow;
+      --article-color: @peach;
+      --audio-color: @mauve;
+      --document-color: @subtext0;
+      --book-color: @rosewater;
+      --image-color: @green;
+      --video-color: @blue;
+      --broken-color: @maroon;
+      --duplicate-color: @sapphire;
+      --tag-color: @subtext0;
+      --filter-color: @subtext0;
+
+      [data-variant="active"] {
+        background: fade(@accent, 10%) !important;
+      }
+      // bookmark edit page header
+      [class^="header-"][data-fancy="true"] {
+        background: linear-gradient(
+          to bottom,
+          var(--background-color) 30%,
+          fade(@base, 60%) 100%
+        );
+      }
+      // bookmark edit page cover selector
+      [class^="cover-"] > [class^="more-"] {
+        background: fade(@accent, 85%);
+      }
+      // add bookmark button text color
+      [title="Add Bookmark"] {
+        color: @base;
+      }
+      // disabled add bookmark button
+      [class^="button-"][data-variant="primary"][disabled] {
+        filter: none;
+        opacity: 100%;
+        background: @overlay0;
+        color: @crust;
+      }
+      // dropping bookmark to collection color overlay
+      [class*="isDropping-"] {
+        background-color: fade(@accent, 10%);
+      }
+      // sidebar background color
+      .svSidebar {
+        background: var(--sidebar-background-color);
+      }
+      color: @text;
+    }
+    // google login button
+    [href^="https://api.raindrop.io/v1/auth/google"] > span {
+      color: @text;
+    }
+
+    // todo: recolor "Colors circle" icons using custom images (like the chess.com theme)
+  }
+}

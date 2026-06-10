@@ -1,0 +1,101 @@
+/* ==UserStyle==
+@name Lingva Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/lingva
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/lingva
+@version 2025.09.06
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/lingva/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Alingva
+@description Comfortable & pleasant green theme for Lingva
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("lingva.ml"),
+  domain("translate.plausibility.cloud"),
+  domain("lingva.lunar.icu"),
+  domain("translate.projectsegfau.lt"),
+  domain("lingva.garudalinux.org") {
+  .chakra-ui-light {
+    #everforest(@lightFlavor);
+  }
+  .chakra-ui-dark {
+    #everforest(@darkFlavor);
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    body {
+      background: @base;
+      color: @text;
+    }
+
+    header {
+      background-color: @accent;
+
+      .chakra-button {
+        color: darken(@accent, 50%);
+        background: lighten(@accent, 5%);
+        &:hover {
+          background: darken(@accent, 5%);
+        }
+      }
+    }
+
+    footer {
+      background-color: @accent;
+      color: darken(@accent, 50%);
+    }
+
+    #__next > div {
+      background: @base;
+    }
+
+    main {
+      background: @base;
+      color: @text;
+
+      select {
+        border-color: @accent;
+        color: @text;
+      }
+      .chakra-select__icon {
+        color: @text;
+      }
+      .chakra-button {
+        color: @accent;
+        border-color: @accent;
+
+        &:hover:not(:disabled) {
+          background-color: fade(@accent, 12%);
+        }
+
+        // Auto translate button (clicked) (Dark and Light classes)
+        &.css-1huvcr7,
+        &.css-q22xb2 {
+          background: @accent;
+          color: @crust;
+        }
+      }
+      .chakra-stack {
+        border-color: @accent;
+      }
+
+      textarea {
+        color: @text;
+      }
+
+      .chakra-text {
+        color: @subtext1;
+      }
+    }
+  }
+}

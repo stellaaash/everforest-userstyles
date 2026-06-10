@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name Searchix Everforest
+@namespace github.com/stellaaash/everforest-userstyles/styles/searchix
+@homepageURL https://github.com/stellaaash/everforest-userstyles/tree/main/styles/searchix
+@version 2025.12.05
+@updateURL https://github.com/stellaaash/everforest-userstyles/raw/main/styles/searchix/everforest.user.less
+@supportURL https://github.com/stellaaash/everforest-userstyles/issues?q=is%3Aopen+is%3Aissue+label%3Asearchix
+@description Comfortable & pleasant green theme for Searchix
+@author stellaaash (Everforest port of Catppuccin's userstyle)
+@license MIT
+
+@preprocessor less
+@var select lightFlavor "Light Flavor" ["light:Everforest Light*"]
+@var select darkFlavor "Dark Flavor" ["dark:Everforest Dark*"]
+@var select accentColor "Accent" ["rosewater:Rosewater", "flamingo:Flamingo", "pink:Pink", "mauve:Purple", "red:Red", "maroon:Maroon", "peach:Orange", "yellow:Yellow", "green:Green*", "teal:Aqua", "sky:Sky", "sapphire:Sapphire", "blue:Blue", "lavender:Lavender", "subtext0:Grey"]
+==/UserStyle== */
+
+@import "https://raw.githubusercontent.com/stellaaash/everforest-userstyles/main/lib/lib.less";
+
+@-moz-document domain("searchix.ovh") {
+  :root {
+    @media (prefers-color-scheme: light) {
+      #everforest(@lightFlavor);
+    }
+    @media (prefers-color-scheme: dark) {
+      #everforest(@darkFlavor);
+    }
+  }
+
+  #everforest(@flavor) {
+    #lib.palette();
+    #lib.defaults();
+
+    --bg: @base;
+    --accent-bg: @mantle;
+    --text: @text;
+    --text-light: @subtext0;
+    --accent: @accent;
+    --accent-hover: @accent;
+    --accent-error: fade(@red, 20%);
+    --border: @overlay0;
+    --code: @lavender;
+    --preformatted: @text;
+    --disabled: @crust;
+
+    dialog {
+      color: var(--text);
+    }
+  }
+}
