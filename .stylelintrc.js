@@ -51,8 +51,9 @@ export default {
     ],
     "property-disallowed-list": [
       [
-        // Disallow setting custom fonts.
-        "/font.*/",
+        // Disallow setting standard font-* properties (anchored so CSS custom
+        // properties like --color-base-font or --jp-ui-font-color1 are not flagged).
+        "/^font/",
 
         // Ideally we could disallow these, but CSS continues to be gross.
         // "/animation.*/",
