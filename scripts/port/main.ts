@@ -114,7 +114,14 @@ export async function upstreamTree(
 export async function buildHexMap(
   upstreamDir: string,
 ): Promise<Map<string, string>> {
-  const lib = await Deno.readTextFile(path.join(upstreamDir, "lib/lib.less"));
+  // Upstream moved the palette block from lib/lib.less to lib/std/v1.less in fd41f7c;
+  // try the canonical path first, fall back to the new versioned location.
+  let lib = await Deno.readTextFile(path.join(upstreamDir, "lib/lib.less"));
+  if (!/@catppuccin:\s*\{/.test(lib)) {
+    lib = await Deno.readTextFile(
+      path.join(upstreamDir, "lib/std/v1.less"),
+    );
+  }
   const paletteBlock = lib.match(/@catppuccin:\s*\{([\s\S]*?)\n\};/);
   if (!paletteBlock) {
     throw new Error("could not parse upstream @catppuccin map");
@@ -283,14 +290,14 @@ async function transformUserstylesYml(upstreamDir: string): Promise<void> {
   // and maintainer attributions (they maintain the catppuccin styles, not
   // this port); upstream credit lives in the README.
   yml = yml.replace(
-    /^collaborators:\n(?:  - &\S+ \S+\n)+/m,
+    /^collaborators:\n(?:[ ]{2}- &\S+ \S+\n)+/m,
     "collaborators:\n  - &stellaaash stellaaash\n",
   );
   yml = yml.replace(
-    /^(    current-maintainers:) \[.*\]$/gm,
+    /^([ ]{4}current-maintainers:) \[.*\]$/gm,
     "$1 [*stellaaash]",
   );
-  yml = yml.replace(/^    past-maintainers: \[.*\]\n/gm, "");
+  yml = yml.replace(/^[ ]{4}past-maintainers: \[.*\]\n/gm, "");
   for (const port of SKIP_PORTS) {
     yml = yml.replace(new RegExp(`^  ${port}:\\n(?:    .*\\n)+`, "m"), "");
   }
