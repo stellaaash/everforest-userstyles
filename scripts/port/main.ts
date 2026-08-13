@@ -290,14 +290,14 @@ async function transformUserstylesYml(upstreamDir: string): Promise<void> {
   // and maintainer attributions (they maintain the catppuccin styles, not
   // this port); upstream credit lives in the README.
   yml = yml.replace(
-    /^collaborators:\n(?:  - &\S+ \S+\n)+/m,
+    /^collaborators:\n(?:[ ]{2}- &\S+ \S+\n)+/m,
     "collaborators:\n  - &stellaaash stellaaash\n",
   );
   yml = yml.replace(
-    /^(    current-maintainers:) \[.*\]$/gm,
+    /^([ ]{4}current-maintainers:) \[.*\]$/gm,
     "$1 [*stellaaash]",
   );
-  yml = yml.replace(/^    past-maintainers: \[.*\]\n/gm, "");
+  yml = yml.replace(/^[ ]{4}past-maintainers: \[.*\]\n/gm, "");
   for (const port of SKIP_PORTS) {
     yml = yml.replace(new RegExp(`^  ${port}:\\n(?:    .*\\n)+`, "m"), "");
   }
