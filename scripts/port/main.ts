@@ -114,7 +114,14 @@ export async function upstreamTree(
 export async function buildHexMap(
   upstreamDir: string,
 ): Promise<Map<string, string>> {
-  const lib = await Deno.readTextFile(path.join(upstreamDir, "lib/lib.less"));
+  // Upstream moved the palette block from lib/lib.less to lib/std/v1.less in fd41f7c;
+  // try the canonical path first, fall back to the new versioned location.
+  let lib = await Deno.readTextFile(path.join(upstreamDir, "lib/lib.less"));
+  if (!/@catppuccin:\s*\{/.test(lib)) {
+    lib = await Deno.readTextFile(
+      path.join(upstreamDir, "lib/std/v1.less"),
+    );
+  }
   const paletteBlock = lib.match(/@catppuccin:\s*\{([\s\S]*?)\n\};/);
   if (!paletteBlock) {
     throw new Error("could not parse upstream @catppuccin map");
