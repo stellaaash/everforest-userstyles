@@ -29,6 +29,12 @@ const IMPORT_REWRITES: [string, string][] = [
     "https://userstyles.catppuccin.com/lib/lib.less",
     `${RAW}/lib/lib.less`,
   ],
+  // upstream moved palette into versioned std lib (fd41f7c / #2305); both URLs
+  // map to our lib/lib.less which already carries the full everforest palette
+  [
+    "https://userstyles.catppuccin.com/lib/std/v1.less",
+    `${RAW}/lib/lib.less`,
+  ],
   [
     "https://prismjs.catppuccin.com/variables.important.css",
     `${RAW}/lib/prism-variables.important.css`,
